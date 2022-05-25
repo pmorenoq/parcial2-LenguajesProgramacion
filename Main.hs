@@ -6,4 +6,4 @@ factor n = let divisores = dropWhile ((/= 0) . mod n) [2 .. ceiling $ sqrt $ fro
               in (prime :) $ factor $ div n prime
 
 main = do
-  print (factor 12333)
+  print(factor 125)
